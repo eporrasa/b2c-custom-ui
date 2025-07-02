@@ -1,0 +1,4 @@
+/* Ocultar botón Continue */
+button#continue { 
+  display: none !important; 
+}
