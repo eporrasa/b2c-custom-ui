@@ -15,6 +15,10 @@ body {
   color: #333;
 }
 
+.verificationInfoText{
+  font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+  color: #4a4a4a;
+}
 .container {
   background-color: white;
   border-radius: 16px;
@@ -141,7 +145,7 @@ label {
   font-size: 18px;
 }
 
-.btn {
+.sendButton {
   width: 100%;
   padding: 18px;
   border: none;
@@ -159,18 +163,18 @@ label {
   margin-right: 10px;
 }
 
-.btn-primary {
+.buttons {
   background: linear-gradient(to right, #667eea, #764ba2);
   color: white;
   box-shadow: 0 4px 15px rgba(118, 75, 162, 0.3);
 }
 
-.btn-primary:hover {
+.buttons:hover {
   transform: translateY(-2px);
   box-shadow: 0 6px 20px rgba(118, 75, 162, 0.4);
 }
 
-.btn-primary:active {
+.buttons:active {
   transform: translateY(0);
 }
 
