@@ -287,3 +287,93 @@ label {
     font-size: 14px;
   }
 }
+
+/* Estilos para el contenedor principal de Azure AD B2C */
+#api {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 350px;
+    padding: 30px;
+    margin: 0 auto;
+}
+
+/* Título del formulario */
+#api h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 30px;
+    font-weight: 600;
+    text-align: center;
+}
+
+/* Grupo de entrada */
+#api .divider {
+    display: none; /* Ocultar divisores si existen */
+}
+
+#api .entry {
+    margin-bottom: 20px;
+}
+
+#api .entry-item {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 14px;
+    color: #333;
+    font-weight: 500;
+}
+
+/* Campos de entrada */
+#api input[type="email"] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+/* Botones */
+#api button {
+    width: 100%;
+    padding: 12px;
+    background-color: #0078d4;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+#api button:hover {
+    background-color: #106ebe;
+}
+
+/* Botón secundario */
+#api .button.secondary {
+    background-color: transparent;
+    color: #0078d4;
+    border: 1px solid #0078d4;
+    margin-top: 15px;
+}
+
+#api .button.secondary:hover {
+    background-color: #f0f7ff;
+}
+
+/* Mensajes de error/verificación */
+#api .verification-error {
+    color: #d83b01;
+    font-size: 13px;
+    margin-top: 5px;
+}
+
+#api .verification-success {
+    color: #107c10;
+    font-size: 13px;
+    margin-top: 5px;
+}
