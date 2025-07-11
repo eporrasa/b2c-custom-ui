@@ -229,7 +229,131 @@
         #api .button.submit:hover {
           background-color: #2d4670;
         }
-      
+              
+        /* ———————————————— OVERRIDES PARA SELF‑ASSERTED ———————————————— */
+        /* Asegúrate de que va *después* de todos los estilos que B2C inyecta */
+
+        /* 1) Campos de texto y email con icono */
+        #api #attributeList ul li.EmailBox .attrEntry input,
+        #api #attributeList ul li.TextBox .attrEntry input {
+          padding: 12px 16px 12px 48px !important;
+          border: 1px solid #405b8e !important;
+          border-radius: 8px !important;
+          background-repeat: no-repeat !important;
+          background-position: 16px center !important;
+          font-size: 14px !important;
+          height: 50px !important;
+        }
+
+        /* icono “user” en documento/email */
+        #api #attributeList ul li.EmailBox .attrEntry input {
+          background-image: url('https://static.thenounproject.com/png/2238679-200.png') !important;
+        }
+        #api #attributeList ul li.TextBox .attrEntry input {
+          background-image: url('https://static.thenounproject.com/png/2238679-200.png') !important;
+        }
+
+        /* 2) Campo contraseña con icono */
+        #api #attributeList ul li.Password .attrEntry input {
+          padding: 12px 16px 12px 48px !important;
+          border: 1px solid #405b8e !important;
+          border-radius: 8px !important;
+          background-image: url('https://static.thenounproject.com/png/108078-200.png') !important;
+          background-repeat: no-repeat !important;
+          background-position: 16px center !important;
+          font-size: 14px !important;
+          height: 50px !important;
+        }
+
+        /* 3) Select (p.ej. país, tipo de documento) con icono y flecha */
+        #api #attributeList ul li .attrEntry .dropdown_single {
+          padding: 12px 16px 12px 48px !important;
+          border: 1px solid #405b8e !important;
+          border-radius: 8px !important;
+          background-color: #fff !important;
+          background-repeat: no-repeat !important;
+          background-position: 16px center !important;
+          position: relative !important;
+          height: 50px !important;
+        }
+
+        /* icono genérico (ajústalo a cada select si tienes varios) */
+        #api #attributeList ul li .attrEntry .dropdown_single {
+          background-image: url('https://static.thenounproject.com/png/167875-200.png') !important;
+        }
+
+        /* quita flecha nativa y pon la tuya */
+        #api #attributeList ul li .attrEntry .dropdown_single select {
+          -webkit-appearance: none !important;
+            -moz-appearance: none !important;
+                  appearance: none !important;
+          width: 100% !important;
+          border: none !important;
+          background: transparent !important;
+          height: 100% !important;
+        }
+        #api #attributeList ul li .attrEntry .dropdown_single::after {
+          content: '';
+          pointer-events: none;
+          position: absolute;
+          right: 16px;
+          top: 50%;
+          transform: translateY(-50%);
+          border-left: 6px solid transparent;
+          border-right: 6px solid transparent;
+          border-top: 6px solid #405b8e;
+        }
+
+        /* 4) Botón “Send verification code” / “Continue” estilo pill */
+        #api .buttons button,
+        #api .buttons button[aria-disabled] {
+          width: 100% !important;
+          max-width: none !important;
+          padding: 12px !important;
+          margin: 0 auto 20px !important;
+          font-size: 16px !important;
+          font-weight: 600 !important;
+          text-align: center !important;
+          border-radius: 25px !important;
+          border: none !important;
+          display: flex !important;
+          align-items: center !important;
+          justify-content: center !important;
+          position: relative !important;
+        }
+
+        /* botón activo */
+        #api .buttons button:not([aria-disabled]) {
+          background-color: #405b8e !important;
+          color: #fff !important;
+          cursor: pointer !important;
+          box-shadow: 0 4px 12px rgba(0,0,0,0.1) !important;
+        }
+        /* botón deshabilitado */
+        #api .buttons button[aria-disabled=true] {
+          background-color: #c1d2f0 !important;
+          color: #fff !important;
+          cursor: default !important;
+          opacity: 1 !important;
+        }
+
+        /* icono dentro del botón (flecha) */
+        #api .buttons button:not([aria-disabled])::before {
+          content: '';
+          display: inline-block;
+          width: 20px;
+          height: 20px;
+          background-image: url('https://static.thenounproject.com/png/2702903-200.png') !important;
+          background-size: contain !important;
+          background-repeat: no-repeat !important;
+          margin-right: 8px !important;
+        }
+
+        /* hover */
+        #api .buttons button:not([aria-disabled]):hover {
+          background-color: #2d4670 !important;
+        }
+
     </style>
 
 </head>
