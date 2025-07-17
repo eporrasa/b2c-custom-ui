@@ -306,6 +306,21 @@
 
         .changeClaims#astEmailVerificationControl_but_change_claims{display: none;}
 
+      /* 1. Convierto el contenedor en flex */
+      #attributeList ul li .attrEntry .verificationControlContent {
+        display: flex;
+        gap: 12px;          /* separación entre botones */
+        align-items: center;/* los alinea verticalmente */
+      }
+
+      /* 2. Asigno un orden a cada botón */
+      #attributeList ul li .attrEntry .verificationControlContent .verifyButton {
+        order: 2;  /* sale a la derecha */
+      }
+      #attributeList ul li .attrEntry .verificationControlContent .changeClaims {
+        order: 1;  /* queda a la izquierda */
+      }
+
     </style>
 
 </head>
