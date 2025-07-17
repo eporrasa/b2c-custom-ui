@@ -306,6 +306,29 @@
 
         .changeClaims#astEmailVerificationControl_but_change_claims{display: none !important;}
 
+        /* 1) Asegura que el contenedor limpie floats */
+        .buttons::after {
+          content: "";
+          display: block;
+          clear: both;
+        }
+
+        /* 2) Botón “Send new code” a la izquierda */
+        .buttons .sendNewCode {
+          float: left;
+          display: inline-block;
+          width: auto !important;      /* que no herede 100% */
+          margin: 0;                   /* ajusta si necesitas espaciado */
+        }
+
+        /* 3) Botón “Verify code” a la derecha */
+        .buttons .verifyCode {
+          float: right;
+          display: inline-block;
+          width: auto !important;
+          margin: 0;
+        } 
+
     </style>
 
 </head>
