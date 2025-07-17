@@ -306,18 +306,21 @@
 
         .changeClaims#astEmailVerificationControl_but_change_claims{display: none;}
 
-        #api\.localaccountverification .buttons {
-          display: flex;
-          gap: 12px;
-          align-items: center;
-        }
+      /* 1) Aplica sólo en el paso 2 de la lista (el de “verification code”) */
+      #attributeList ul li:nth-child(2) .attrEntry .verificationControlContent {
+        display: flex;
+        gap: 12px;               /* espacio entre botones */
+        align-items: center;     /* centra verticalmente si es necesario */
+      }
 
-        #api\.localaccountverification .buttons .sendNewCode {
-          order: 1;  /* “Send new code” primero (izquierda) */
-        }
-        #api\.localaccountverification .buttons .verifyCode {
-          order: 2;  /* “Verify code” después (derecha) */
-        }
+      /* 2) Reordena cada botón */
+      #attributeList ul li:nth-child(2) .attrEntry .verificationControlContent .sendNewCode {
+        order: 1;  /* “Send new code” aparece primero (izquierda) */
+      }
+      #attributeList ul li:nth-child(2) .attrEntry .verificationControlContent .verifyCode {
+        order: 2;  /* “Verify code” aparece segundo (derecha) */
+      }
+
 
     </style>
 
