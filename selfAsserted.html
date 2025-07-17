@@ -231,7 +231,7 @@
         #attributeVerification #attributeList ul li input:invalid{outline:unset}
         #attributeVerification #attributeList ul li .helpText{display:none;color:#a61e0c;text-align:justify}
         #attributeVerification #attributeList ul li 
-        #email_success.verificationSuccessText{float:left}
+        #email_success.verificationSuccessText{float:left; color: whitesmoke;}
         #attributeVerification #attributeList ul li #email_info {float:left}
         #attributeVerification #attributeList ul li .attrEntry.validate #email_fail_retry{float:left}
         #attributeVerification #attributeList ul li .attrEntry.validate #email_fail_server{float:left;text-align:left}
@@ -256,16 +256,15 @@
         #attributeList ul li .buttons.verify label{float:left}
         .qrCodeControlContent img{margin-left:auto;margin-right:auto}
         .qrCodeInfo{text-align:left}
-        .verifyInput{-webkit-text-security: disc; -moz-text-security: disc; color: #000;}
-        .textInput #verificationCode{-webkit-text-security: disc; -moz-text-security: disc; color: #000;}
-        .intro{color: whitesmoke;} 
-        .verificationInfoText{color: whitesmoke;} 
-        .textInput{color: black;}
-        .verificationSuccessText{color: black;}
-        .error{color: #FC5555; background-color: #FFEAEA;}
-        .buttons{color: whitesmoke;}
+        .verifyInput{-webkit-text-security: disc; -moz-text-security: disc; color: #000}
+        .textInput#verificationCode{-webkit-text-security: disc; -moz-text-security: disc; color: #000}
+        .intro{color: whitesmoke} 
+        .verificationInfoText{color: whitesmoke}
+        .textInput{color: black}
+        .error{color: #FC5555; background-color: #FFEAEA}
+        .buttons{color: whitesmoke}
         .background-imp{background-image: url('https://b2c-custom-ui.vercel.app/images/login-img.png'); background-position-x: right; background-position-y: bottom; background-repeat: no-repeat;
-    background-size: contain;}
+    background-size: contain}
 
         /* endinject */
     </style>
@@ -304,6 +303,9 @@
             justify-content: center;  /* centrar horizontal */
         }
 
+        .verificationSuccessText{
+          color: black;
+        }        
     </style>
 
 </head>
