@@ -189,7 +189,7 @@
           .row .panel-default .panel-body .branding img{display:block;height:80px;width:auto;margin:0 auto}
           .row .panel-default .panel-body .branding h1{display:none}
           .row .panel-default .panel-body h3{font-size:1.5em;margin-top:15px}
-          #attributeVerification #attributeList ul li input{width:60%;height:40px;border-radius:.5rem;border:1px solid #605e5c;text-indent:10px}
+          #attributeVerification #attributeList ul li input{width:60%;height:40px;border-radius:10px;border:1px solid #605e5c;text-indent:10px}
           #attributeVerification #attributeList ul li input::-webkit-input-placeholder{text-indent:10px}
           #attributeVerification #attributeList ul li #email{width:65%;float:left;position:relative;z-index:2}
           #attributeVerification #attributeList ul li #email_ver_but_verify{background:0 0;border:0;color:#496ad8;font-size:1em;position:relative;right:0;top:60px;font-size:1.1em;width:auto;z-index:1;height:20px}
@@ -241,9 +241,12 @@
         #attributeVerification #attributeList ul li input[type=checkbox].invalid{border:none}
         #attributeList ul li input[type=checkbox]+label{float:left;display:inline-block!important;margin:.8rem 0 0 .8rem;font-weight:400}
         #attributeList ul li input[type=checkbox]{border:none;position:relative;width:24px;height:24px;font-size:20px;margin:0;display:inline-block;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;-o-user-select:none;user-select:none;-webkit-appearance:none;-moz-appearance:none;appearance:none;outline:0;text-indent:0}
-        #attributeVerification #attributeList ul li input[type=checkbox]:focus{box-shadow:0 0 0 2px #000;border-radius:.2rem}#attributeList ul li input[type=checkbox]:after{content:'';position:absolute;display:block;z-index:1;width:24px;height:24px;border:1px solid #605e5c;border-radius:2px}
+        #attributeVerification #attributeList ul li input[type=checkbox]:focus{box-shadow:0 0 0 2px #000;border-radius:.2rem}
+        #attributeList ul li input[type=checkbox]:after{content:'';position:absolute;display:block;z-index:1;width:24px;height:24px;border:1px solid #605e5c;border-radius:2px}
         #attributeList ul li input[type=checkbox]:before{background:#00f;background-size:10px 8px;background-repeat:no-repeat;background-position:3px 4px;position:absolute;left:2px;z-index:2;opacity:0;width:100%;height:100%;color:#f6ac4f}
-        #attributeList ul li input[type=checkbox]:checked:after{content:'\2713';position:absolute;box-sizing:border-box;padding-left:4px;line-height:23px;color:#fff;background-color:#296ec6;top:0;opacity:1;left:0;border:1px solid #296ec6;border-radius:2px}#attributeList ul li input[type=radio]+label{float:left;display:inline-block!important;margin:.5rem;font-weight:400}#attributeList ul li input[type=radio]{-webkit-appearance:none;appearance:none;width:20px;height:20px;border:1px solid #dedede;border-radius:50%;background-color:#fff;outline:0}
+        #attributeList ul li input[type=checkbox]:checked:after{content:'\2713';position:absolute;box-sizing:border-box;padding-left:4px;line-height:23px;color:#fff;background-color:#296ec6;top:0;opacity:1;left:0;border:1px solid #296ec6;border-radius:2px}
+        #attributeList ul li input[type=radio]+label{float:left;display:inline-block!important;margin:.5rem;font-weight:400}
+        #attributeList ul li input[type=radio]{-webkit-appearance:none;appearance:none;width:20px;height:20px;border:1px solid #dedede;border-radius:50%;background-color:#fff;outline:0}
         #attributeVerification #attributeList ul li input[type=radio]:focus{box-shadow:0 0 0 3px #000}
         #attributeList ul li input[type=radio]:checked{background-color:#296ec6;border:1px solid #296ec6}
         .attrEntry .verificationInfoText{margin-bottom:5px}
@@ -261,7 +264,7 @@
         .verificationSuccessText#astEmailVerificationControl_success_message{color: whitesmoke}
         .intro{color: whitesmoke; margin-top: 100px;} 
         .verificationInfoText{color: whitesmoke}
-        .textInput{color: whitesmoke; background-color: #092F4E;}
+        .textInput{color: whitesmoke; background-color: #092F4E; border-width: 1px solid white;}
         .error{color: #FC5555; background-color: #FFEAEA}
         .buttons{color: whitesmoke}
         .background-imp{background-image: url('https://b2c-custom-ui.vercel.app/images/login-img.png'); background-position-x: right; background-position-y: bottom; background-repeat: no-repeat;
