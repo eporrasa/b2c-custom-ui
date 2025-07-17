@@ -304,24 +304,25 @@
             justify-content: center;  /* centrar horizontal */
         }
 
-        .changeClaims#astEmailVerificationControl_but_change_claims{display: none;}
+        .changeClaims#astEmailVerificationControl_but_change_claims{display: none !important;}
 
-      /* 1) Aplica sólo en el paso 2 de la lista (el de “verification code”) */
-      #attributeList ul li:nth-child(2) .attrEntry .verificationControlContent {
-        display: flex;
-        gap: 12px;               /* espacio entre botones */
-        align-items: center;     /* centra verticalmente si es necesario */
-      }
+        /* 1) Hacer flexbox en el contenedor de los dos botones */
+        #attributeVerification #attributeList ul li .verificationControlContent {
+          display: flex !important;
+          gap: 12px;          /* espacio entre botones, ajusta a tu gusto */
+          justify-content: flex-start;
+        }
 
-      /* 2) Reordena cada botón */
-      #attributeList ul li:nth-child(2) .attrEntry .verificationControlContent .sendNewCode {
-        order: 1;  /* “Send new code” aparece primero (izquierda) */
-      }
-      #attributeList ul li:nth-child(2) .attrEntry .verificationControlContent .verifyCode {
-        order: 2;  /* “Verify code” aparece segundo (derecha) */
-      }
+        /* 2) “Send new code” primero (izquierda) */
+        #attributeVerification #attributeList ul li .verificationControlContent .sendNewCode {
+          order: 1 !important;
+        }
 
-
+        /* 3) “Verify code” segundo (derecha) */
+        #attributeVerification #attributeList ul li .verificationControlContent .verifyCode {
+          order: 2 !important;
+        }
+        
     </style>
 
 </head>
