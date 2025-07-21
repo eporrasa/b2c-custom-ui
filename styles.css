@@ -6,13 +6,13 @@ footer {
 }
 
 .login-img {
-  background-image: url('images/login-img-small.png');
+  background-image: url('https://b2c-custom-ui.vercel.app/images/login-img-small.png');
   background-position-x: right;
   background-position-y: bottom;
   background-repeat: no-repeat;
   background-size: contain;
 
   @media (min-width: 1440px) {
-    background-image: url('images/login-img.png');
+    background-image: url('https://b2c-custom-ui.vercel.app/images/login-img.png');
   }
 }
