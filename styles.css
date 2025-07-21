@@ -6,13 +6,18 @@ footer {
 }
 
 .login-img {
-  background-image: url('https://b2c-custom-ui.vercel.app/images/login-img-small.png');
-  background-position-x: right;
-  background-position-y: bottom;
-  background-repeat: no-repeat;
-  background-size: contain;
+    background-image: url('https://b2c-custom-ui.vercel.app/images/login-img-small.png');
+    background-position-x: right;
+    background-position-y: bottom;
+    background-repeat: no-repeat;
+    background-size: contain;
 
-  @media (min-width: 1440px) {
-    background-image: url('https://b2c-custom-ui.vercel.app/images/login-img.png');
-  }
+    @media (min-width: 1440px) {
+        background-image: url('https://b2c-custom-ui.vercel.app/images/login-img.png');
+    }
+}
+
+.login-card {
+    background-color: #092f4e;
+    padding: 0 4em 2em 4em;
 }
