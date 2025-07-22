@@ -1,26 +1,66 @@
-footer {
-    background-color: #092e4c;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
+      body {
+          margin: 0;
+          background: radial-gradient(22.42% 39.86% at 35.63% 65.28%,
+                  #065ea6 0%,
+                  #092e4c 100%);
+          font-family: "Red Hat Display", sans-serif;
 
-.login-img {
-    background-image: url('https://b2c-custom-ui.vercel.app/images/login-img-small.png');
-    background-position-x: right;
-    background-position-y: bottom;
-    background-repeat: no-repeat;
-    background-size: contain;
+          @media (max-width: 768px) {
+              background: radial-gradient(58.63% 58.63% at 49.75% 41.37%,
+                      #065ea6 0%,
+                      #092e4c 100%);
+          }
 
-    @media (min-width: 1440px) {
-        background-image: url('https://b2c-custom-ui.vercel.app/images/login-img.png');
-    }
-}
+      }
 
-.login-card {
-    background-color: #092f4e;
-    padding: 0 1em 0em 1em;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
+      footer {
+          background-color: #092e4c;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+      }
+
+      .login-img {
+          background-image: url('https://b2c-custom-ui.vercel.app/images/login-img-small.png');
+          background-position-x: right;
+          background-position-y: bottom;
+          background-repeat: no-repeat;
+          background-size: contain;
+
+          @media (min-width: 1440px) {
+              background-image: url('https://b2c-custom-ui.vercel.app/images/login-img.png');
+          }
+
+          @media (max-width: 768px) {
+              display: none;
+          }
+      }
+
+      .login-card {
+          background-color: #092f4e;
+          padding: 0 1em 0em 1em;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+
+          @media (max-width: 768px) {
+              background-color: transparent;
+          }
+      }
+
+      .image-bg {
+          background-image: url('https://b2c-custom-ui.vercel.app/images/background-login.png');
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
+
+          @media (max-width: 992px) {
+              background-image: url('https://b2c-custom-ui.vercel.app/images/isotipo_login_tablet.png');
+
+              @media (max-width: 768px) {
+                  background-image: url('https://b2c-custom-ui.vercel.app/images/images/isotipo_login_mobile.png');
+              }
+          }
+
+
+      }
