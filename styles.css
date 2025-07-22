@@ -1,0 +1,23 @@
+footer {
+    background-color: #092e4c;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.login-img {
+    background-image: url('https://b2c-custom-ui.vercel.app/images/login-img-small.png');
+    background-position-x: right;
+    background-position-y: bottom;
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    @media (min-width: 1440px) {
+        background-image: url('https://b2c-custom-ui.vercel.app/images/login-img.png');
+    }
+}
+
+.login-card {
+    background-color: #092f4e;
+    padding: 0 2em 2em 2em;
+}
