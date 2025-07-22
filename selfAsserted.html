@@ -14,6 +14,13 @@
 
     <link rel="stylesheet" href="https://b2c-custom-ui.vercel.app/styles.css" />
 
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+
     <!-- <link
       href="https://ajax.aspnetcdn.com/ajax/bootstrap/3.3.5/css/bootstrap.min.css"
       rel="stylesheet"
@@ -1163,7 +1170,7 @@
       .textInput#verificationCode {
         -webkit-text-security: disc;
         -moz-text-security: disc;
-        color: whitesmoke;
+        color: #FFFFFF;
       }
 
       .verificationSuccessText {
@@ -1190,15 +1197,11 @@
         background-color: transparent !important;
         border: 1.5px solid white;
         font-size: 20px;
-        font-family: "Red Hat Display";
+        font-family: "Red Hat Display", sans-serif;
       }
 
-      input:-webkit-autofill,
-      input:-webkit-autofill:hover,
-      input:-webkit-autofill:focus,
-      input:-webkit-autofill:active {
-        background-color: transparent !important;
-        color: #ffffff !important;
+      input:focus-visible {
+        outline: none;
       }
 
       .error {
@@ -1210,6 +1213,7 @@
         text-align: center;
         padding: 0 1.5px;
         margin-bottom: 5px;
+        font-family: "Red Hat Display", sans-serif;
       }
 
       .buttons {
