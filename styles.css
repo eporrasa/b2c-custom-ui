@@ -20,4 +20,7 @@ footer {
 .login-card {
     background-color: #092f4e;
     padding: 0 2em 2em 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
