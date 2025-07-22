@@ -183,7 +183,7 @@
       }
 
       input::placeholder {
-        color: #ADADAD;
+        color: #adadad;
         font-size: 20px;
       }
 
@@ -432,7 +432,7 @@
 
       #attributeList ul li .attrEntry.validate input.invalid,
       #attributeList ul li .attrEntry.validate input:invalid {
-        border: 1.5px solid #FC5555;
+        border: 1.5px solid #fc5555;
       }
 
       #attributeList ul li .attrEntry .verify {
@@ -1175,7 +1175,7 @@
       }
 
       .intro {
-        color: #FFFFFF;
+        color: #ffffff;
         font-family: "Red Hat Display", sans-serif;
         font-size: 25px;
         font-weight: 700;
@@ -1186,11 +1186,19 @@
       }
 
       .textInput {
-        color: #FFFFFF;
+        color: #ffffff;
         background-color: transparent !important;
         border: 1.5px solid white;
         font-size: 20px;
         font-family: "Red Hat Display";
+      }
+
+      input:-webkit-autofill,
+      input:-webkit-autofill:hover,
+      input:-webkit-autofill:focus,
+      input:-webkit-autofill:active {
+        background-color: transparent !important;
+        color: #ffffff !important;
       }
 
       .error {
