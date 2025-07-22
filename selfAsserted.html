@@ -349,7 +349,7 @@
       }
 
       .buttons button:hover {
-        opacity: 0.85;
+        opacity: 0.85 !important;
       }
 
       .buttons button[aria-disabled="true"] {
@@ -360,7 +360,7 @@
       }
 
       .buttons button:not([aria-disabled="true"]) {
-        opacity: 1;
+       
       }
 
       .buttons #cancel {
@@ -539,7 +539,7 @@
         border: 0;
         right: 0;
         bottom: -38px;
-        width: inherit;
+        width: 170px;
         height: 48px;
         background-color: #fdb813;
         border-radius: 64px;
@@ -584,7 +584,7 @@
       #attributeList ul li .attrEntry .verificationControlContent .verifyCode {
         padding: 0 20px;
         margin-right: 5px;
-        width: inherit;
+        width: 170px;
         height: 48px;
         background-color: #fdb813;
         border-radius: 64px;
@@ -848,6 +848,7 @@
 
         #attributeVerification .buttons #continue {
           height: 40px;
+          opacity: 1;
         }
 
         #attributeVerification .buttons #cancel {
