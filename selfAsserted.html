@@ -222,6 +222,9 @@
 
       #api {
         margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
       }
 
       .heading h1 {
@@ -336,7 +339,7 @@
         background-color: #fdb813;
         border-radius: 64px;
         border: none;
-        color: #065EA6;
+        color: #065ea6;
         font-size: 16px;
         margin-top: 10px;
         font-weight: 700;
@@ -346,13 +349,13 @@
 
       .buttons button:hover {
         opacity: 0.85;
-       
       }
 
       .buttons button[aria-disabled="true"] {
-        background-color: #BBBDC0;
-        color: #FFFFFF;
+        background-color: #bbbdc0;
+        color: #ffffff;
         cursor: not-allowed;
+        opacity: 1;
       }
 
       .buttons button:not([aria-disabled="true"]) {
@@ -454,8 +457,6 @@
       }
 
       #attributeList ul li .attrEntry .verificationControlContent .buttons {
-        margin-top: 2rem;
-        padding-bottom: 10px;
         position: relative;
       }
 
@@ -473,7 +474,7 @@
         background-color: #fdb813;
         border-radius: 64px;
         border: none;
-        color: #065EA6;
+        color: #065ea6;
         font-size: 16px;
         margin-top: 10px;
         font-weight: 700;
@@ -1180,7 +1181,7 @@
       .textInput#verificationCode {
         -webkit-text-security: disc;
         -moz-text-security: disc;
-        color: #FFFFFF;
+        color: #ffffff;
       }
 
       .verificationSuccessText {
@@ -1196,6 +1197,7 @@
         font-family: "Red Hat Display", sans-serif;
         font-size: 25px;
         font-weight: 700;
+        text-align: center;
       }
 
       .verificationInfoText {
@@ -1332,7 +1334,7 @@
 
         <div class="col-5 col-lg-4 d-flex justify-content-center">
           <div class="login-card col-8">
-            <img src="https://b2c-custom-ui.vercel.app/images/logo-pse.png"/>
+            <img src="https://b2c-custom-ui.vercel.app/images/logo-pse.png" />
             <div id="api" role="main"></div>
           </div>
         </div>
