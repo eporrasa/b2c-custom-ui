@@ -67,6 +67,11 @@
           }
       }
 
+      .logo-pse {
+        width: 97px;
+        visibility: hidden;
+      }
+
       .image-bg {
           background-image: url('https://b2c-custom-ui.vercel.app/images/background-login.png');
           background-position: center;
@@ -95,6 +100,10 @@
 
           .header {
               display: none;
+          }
+
+          .logo-pse {
+            visibility: visible;
           }
 
       }
