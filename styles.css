@@ -20,7 +20,11 @@
       }
 
       .header {
-          height: 60px
+          height: 60px;
+
+          @media (min-width: 1440px) {
+              height: 80px;
+          }
       }
 
       .img-footer {
