@@ -64,8 +64,13 @@
 
           @media (max-width: 1023px) {
               background-color: transparent;
-              justify-content: space-around;
+              gap: 8em;
           }
+
+          @media (max-width: 600px) {
+              gap: 5em;
+          }
+
       }
 
       .logo-pse {
@@ -76,11 +81,9 @@
 
       .logo-pse img {
           width: 97px;
-          gap: 8em;
 
           @media (max-width: 600px) {
               width: 70px;
-              gap: 5em;
           }
       }
 
