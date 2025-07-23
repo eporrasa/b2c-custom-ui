@@ -1261,16 +1261,6 @@
     </style>
 
     <style>
-      /* 1) Fondo de pantalla completo */
-      body {
-        margin: 0;
-        background: radial-gradient(
-          22.42% 39.86% at 35.63% 65.28%,
-          #065ea6 0%,
-          #092e4c 100%
-        );
-        font-family: Segoe UI, sans-serif;
-      }
 
       /* 2) Creamos un flex container de altura completa */
       .self_asserted_container .row {
@@ -1334,21 +1324,21 @@
 
   <body class="vh-100 vw-100 background-login">
     <div class="image-bg d-flex flex-column vh-100 vw-100">
-      <div style="height: 60px"></div>
+      <div class="header"></div>
 
       <div class="d-flex justify-content-center" style="flex: 1">
         <div class="col-4 col-lg-3 login-img"></div>
 
-        <div class="col-5 col-lg-3 d-flex justify-content-center">
+        <div class="col-xs-12 col-sm-12 col-lg-5 col-lg-3 d-flex justify-content-center">
           <div class="login-card col-10">
-            <div id="api" role="main"></div>
+            <div style="height: 453px; width: 345px; background-color: red;" id="api" role="main"></div>
           </div>
         </div>
       </div>
 
       <footer class="p-3" style="z-index: 10000">
         <img
-          style="height: 35px"
+          class="img-footer"
           src="https://b2c-custom-ui.vercel.app/images/vigilado.png"
           alt="Footer Image"
         />
