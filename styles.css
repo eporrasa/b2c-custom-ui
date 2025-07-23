@@ -69,9 +69,17 @@
       }
 
       .logo-pse {
-        display: flex;
-        justify-content: center;
-        visibility: hidden;
+          display: flex;
+          justify-content: center;
+          visibility: hidden;
+      }
+
+      .logo-pse img {
+          width: 97px;
+
+          @media (max-width: 600px) {
+              width: 70px;
+          }
       }
 
       .image-bg {
@@ -105,7 +113,7 @@
           }
 
           .logo-pse {
-            visibility: visible;
+              visibility: visible;
           }
 
       }
