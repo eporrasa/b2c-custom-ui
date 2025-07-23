@@ -61,9 +61,8 @@
       }
 
       .logo-pse {
-          display: flex;
           justify-content: center;
-          visibility: hidden;
+          display: none;
       }
 
       .logo-pse img {
@@ -103,7 +102,7 @@
           }
 
           .logo-pse {
-              visibility: visible;
+            display: flex;
           }
 
           footer {
