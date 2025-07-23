@@ -12,11 +12,6 @@
           display: flex;
           align-items: center;
           justify-content: space-between;
-
-          @media (max-width: 1023px) {
-              justify-content: center;
-          }
-
       }
 
       .header {
@@ -49,10 +44,6 @@
           @media (min-width: 1024px) and (max-width: 1440px) {
               background-image: url('https://b2c-custom-ui.vercel.app/images/login-img-small.png');
           }
-
-          @media (max-width: 1023px) {
-              display: none;
-          }
       }
 
       .login-card {
@@ -61,11 +52,6 @@
           display: flex;
           flex-direction: column;
           justify-content: center;
-
-          @media (max-width: 1023px) {
-              background-color: transparent;
-              gap: 8em;
-          }
 
           @media (max-width: 600px) {
               gap: 0em;
@@ -103,8 +89,6 @@
               background-image: url('https://b2c-custom-ui.vercel.app/images/isotipo_login_tablet.png');
               overflow-y: hidden;
           }
-
-
       }
 
       @media (max-width: 1023px) {
@@ -122,6 +106,18 @@
               visibility: visible;
           }
 
+          footer {
+              justify-content: center;
+          }
+
+          .login-img {
+              display: none;
+          }
+
+          .login-card {
+              background-color: transparent;
+              gap: 8em;
+          }
       }
 
 
