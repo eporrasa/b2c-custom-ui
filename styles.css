@@ -80,6 +80,7 @@
 
           @media (max-width: 992px) {
               background-image: url('https://b2c-custom-ui.vercel.app/images/isotipo_login_tablet.png');
+              overflow-y: hidden;
           }
 
 
