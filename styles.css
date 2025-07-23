@@ -76,9 +76,11 @@
 
       .logo-pse img {
           width: 97px;
+          gap: 8em;
 
           @media (max-width: 600px) {
               width: 70px;
+              gap: 5em;
           }
       }
 
