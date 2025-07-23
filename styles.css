@@ -54,8 +54,7 @@
           justify-content: center;
 
           @media (max-width: 600px) {
-              gap: 0em;
-              justify-content: space-around;
+              gap: 5em;
           }
 
       }
@@ -102,7 +101,10 @@
           }
 
           .logo-pse {
-            display: flex;
+              display: flex;
+              flex-direction: column;
+              color: #FFFFFF;
+              font-size: 18px;
           }
 
           footer {
@@ -302,6 +304,11 @@
           flex-direction: column;
           align-items: center;
           position: relative;
+
+          @media (max-width: 1023px) {
+              position: inherit;
+          }
+
       }
 
       .heading h1 {
@@ -453,6 +460,11 @@
           box-shadow: none;
           text-align: left;
           font-size: 13px;
+
+          @media (max-width: 1023px) {
+              top: 2em;
+              left: 2em;
+          }
       }
 
       .buttons #cancel:hover {
