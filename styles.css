@@ -61,6 +61,10 @@ footer {
     padding: 0;
     width: 94%;
   }
+
+  @media (max-width: 400px) {
+    gap: 1em;
+  }
 }
 
 .logo-pse {
@@ -474,9 +478,14 @@ ul {
   text-align: left;
   font-size: 13px;
 
-  @media (max-width: 1023px) {
+  @media (min-width: 601px) and (max-width: 1023px) {
     top: 2em;
     left: 2em;
+  }
+
+  @media (max-width: 600px) {
+    top: 1em;
+    left: 1em;
   }
 }
 
