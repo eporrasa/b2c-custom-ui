@@ -58,7 +58,8 @@ footer {
 
   @media (max-width: 600px) {
     gap: 2em;
-    padding: 0 1em 0em 1em;
+    padding: 0;
+    width: 94%;
   }
 }
 
