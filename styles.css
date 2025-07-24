@@ -91,6 +91,10 @@ footer {
   }
 }
 
+.content-b2c {
+  display: flex;
+}
+
 @media (max-width: 1023px) {
   body {
     background: radial-gradient(
@@ -98,6 +102,10 @@ footer {
       #065ea6 0%,
       #092e4c 100%
     );
+  }
+
+  .content-b2c {
+    justify-content: center;
   }
 
   .header {
