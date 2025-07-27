@@ -20,6 +20,15 @@
       href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap"
       rel="stylesheet"
     />
+    
+    <script>
+      document.addEventListener('api:request', () => {
+        document.getElementById('loader').classList.remove('loader-hidden');
+      });
+      document.addEventListener('api:response', () => {
+        document.getElementById('loader').classList.add('loader-hidden');
+      });
+    </script>    
   </head>
 
   <body class="vh-100 vw-100 background-login">
@@ -41,14 +50,6 @@
                 <span class="dot"></span><span class="dot"></span><span class="dot"></span>
               </div>
             </div>
-            <script>
-              document.addEventListener('api:request', () => {
-                document.getElementById('loader').classList.remove('loader-hidden');
-              });
-              document.addEventListener('api:response', () => {
-                document.getElementById('loader').classList.add('loader-hidden');
-              });
-            </script>
           </div>
         </div>
       </div>
