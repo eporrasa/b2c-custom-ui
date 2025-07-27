@@ -36,19 +36,7 @@
               <div style="margin-top: 0.5em">Fácil, rápido y seguro</div>
             </div>
 
-            <div id="api" role="main">
-              <div id="loader" data-bind="visible: isLoading" class="loader-hidden">
-                <span class="dot"></span><span class="dot"></span><span class="dot"></span>
-              </div>
-            </div>
-            <script>
-              document.addEventListener('api:request', () => {
-                document.getElementById('loader').classList.remove('loader-hidden');
-              });
-              document.addEventListener('api:response', () => {
-                document.getElementById('loader').classList.add('loader-hidden');
-              });
-            </script>            
+            <div id="api" role="main"></div>
           </div>
         </div>
       </div>
