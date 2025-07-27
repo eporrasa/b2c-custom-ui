@@ -20,7 +20,9 @@
       href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap"
       rel="stylesheet"
     />
-    
+        <!-- 1️⃣ Librería de B2C que maneja el isLoading -->
+    <script src="https://b2cast.b2clogin.com/b2cast.onmicrosoft.com/B2C_1A_TrustFrameworkExtensions_passwordless_only_NEW/static/selfasserted/ssplogin.js" defer></script>
+
     <script>
       document.addEventListener('api:request', () => {
         document.getElementById('loader').classList.remove('loader-hidden');
